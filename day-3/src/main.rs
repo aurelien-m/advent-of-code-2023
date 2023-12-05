@@ -1,5 +1,3 @@
-use std::cmp;
-
 use std::fs;
 
 #[derive(Debug)]
@@ -8,7 +6,6 @@ struct PartNumber {
     line: usize,
     start: usize,
     end: usize,
-    valid: bool,
 }
 
 fn part_1() {
@@ -136,7 +133,6 @@ fn part_2() {
                     line: l_idx,
                     start: start,
                     end: c_idx - 1,
-                    valid: valid,
                 });
 
                 part = Vec::new();
